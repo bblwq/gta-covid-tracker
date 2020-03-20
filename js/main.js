@@ -1,3 +1,4 @@
+console.log("main.js loaded");
 $(document).ready(function() {
 	$("#home-link").click(function() {
 		$('a').removeClass('active');
