@@ -7,7 +7,6 @@
 .numbers {
   position: relative;
   margin: 1% auto;
-  width: 50%;
   text-align: center;
   padding: 1% 0;
   box-shadow: 0 2px 7px rgba(118, 118, 118, 0.47);
@@ -16,7 +15,6 @@
 .tabs {
   background-color: #fff;
   overflow: hidden;
-  width: 50%;
   text-align: center;
   position: relative;
   margin: 2% auto;
