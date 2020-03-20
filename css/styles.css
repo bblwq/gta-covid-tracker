@@ -1,4 +1,35 @@
 /* Add a black background color to the top navigation */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.confirmed-num {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #FFA000;
+}
+
+.recovered-num {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1565C0;
+}
+
+.deaths-num {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 .headline {
   margin-top: 2%;
   text-align: center;
@@ -6,7 +37,7 @@
 
 .numbers {
   position: relative;
-  margin: 1% auto;
+  margin: 2% auto;
   text-align: center;
   padding: 1% 0;
   box-shadow: 0 2px 7px rgba(118, 118, 118, 0.47);
@@ -27,9 +58,41 @@
   color: #9d9d9d;
   text-align: center;
   padding: 14px 16px;
+  margin: 0 5%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.5rem;
   border-bottom: 3px solid transparent;
+}
+
+/* On mobile */
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  .numbers {
+    margin: 2% auto;
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .confirmed-num, .recovered-num, .deaths-num  {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  .tabs {
+    margin: auto;
+  }
+
+  .tabs a {
+    font-size: 1rem;
+    margin: 0 0;
+  }
 }
 
 .tabs a:hover {
@@ -41,16 +104,8 @@
   color: #1565C0;
 }
 
-.tab-content {
-  border-bottom: transparent;
-}
-
 .data {
   display: inline-block;
   position: relative;
   margin: 0 5%;
-}
-
-.data h2 {
-  text-align: center;
 }
