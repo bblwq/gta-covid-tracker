@@ -96,6 +96,7 @@ h2 {
 }
 
 .tabs a:hover {
+  color: #1565C0;
   border-bottom: 3px solid #1565C0;
 }
 
