@@ -1,2 +1,2 @@
-# gta-covid-tracker
+# GTA COVID-19 Tracker
 # eric
