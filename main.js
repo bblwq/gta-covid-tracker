@@ -18,10 +18,10 @@ $(document).ready(function() {
 		$(".tab").hide();
 		$('#tab-news').show();
 	});
-	$("#contact-link").click(function() {
+	$("#supplies-link").click(function() {
 		$('a').removeClass('active');
 		$(this).addClass('active');
 		$(".tab").hide();
-		$('#tab-contact').show();
+		$('#tab-supplies').show();
 	});
 });
