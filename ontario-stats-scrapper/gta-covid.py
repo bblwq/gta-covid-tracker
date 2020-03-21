@@ -2,10 +2,10 @@ import urllib3
 from bs4 import BeautifulSoup
 import json
 
-with open('data.json') as inputfile:
+with open('data.json', 'r') as inputfile:
     data = json.load(inputfile)
 print("Read " + str(len(data)) + " cases from data.json")
-    
+
 gta_regions = ['Toronto', 'Peel', 'York', 'Durham', 'Halton']
 
 try:
@@ -21,8 +21,9 @@ try:
             for case in cases:
                 fields = case.find_all("td")
                 if fields[2].get_text() in gta_regions:
-                    data[fields[0].get_text()] = [f.get_text() for f in fields[1:]]
-        with open('data.json', 'w') as outfile:
+                    new_entry = {'case_no':fields[0].get_text(),'patient':fields[1].get_text(), 'public_health_unit':fields[2].get_text(), 'transmission':fields[3].get_text(), 'status':fields[4].get_text()}
+                    data = data + [new_entry]
+        with open('data.json', 'w', encoding='utf-8') as outfile:
             print('Writting ' + str(len(data)) + ' cases to data.json')
             json.dump(data, outfile)
     else:
