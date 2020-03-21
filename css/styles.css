@@ -42,6 +42,12 @@ h2 {
   box-shadow: 0 2px 7px rgba(118, 118, 118, 0.47);
 }
 
+.data {
+  display: inline-block;
+  position: relative;
+  margin: 0 5%;
+}
+
 .tabs {
   background-color: #fff;
   overflow: hidden;
@@ -64,6 +70,22 @@ h2 {
   border-right: none;
   border-bottom: 3px solid transparent;
   outline: none;
+}
+
+.tabs button:hover {
+  border-bottom: 3px solid #1565C0;
+}
+
+.tabs .active {
+  color: #1565C0;
+  font-weight: 900;
+  border-bottom: 3px solid #1565C0;
+  outline: none;
+}
+
+.tab {
+  width: 50%;
+  float: left;
 }
 
 /* On mobile */
@@ -95,21 +117,8 @@ h2 {
     font-size: 1rem;
     margin: 0 0;
   }
-}
 
-.tabs button:hover {
-  border-bottom: 3px solid #1565C0;
-}
-
-.tabs .active {
-  color: #1565C0;
-  font-weight: 900;
-  border-bottom: 3px solid #1565C0;
-  outline: none;
-}
-
-.data {
-  display: inline-block;
-  position: relative;
-  margin: 0 5%;
+  .tab {
+    width: 100%;
+  }
 }
