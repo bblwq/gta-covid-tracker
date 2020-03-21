@@ -69,6 +69,9 @@ h2 {
   border-left: none;
   border-right: none;
   border-bottom: 3px solid transparent;
+}
+
+.tabs button:focus {
   outline: none;
 }
 
@@ -80,12 +83,17 @@ h2 {
   color: #1565C0;
   font-weight: 900;
   border-bottom: 3px solid #1565C0;
+}
+
+.tabs .active:focus {
   outline: none;
 }
 
 .tab {
   width: 50%;
   float: left;
+  margin: 1% 0;
+  box-shadow: 0 2px 7px rgba(118, 118, 118, 0.47);
 }
 
 /* On mobile */
