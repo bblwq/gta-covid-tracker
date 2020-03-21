@@ -1,4 +1,3 @@
-/* Add a black background color to the top navigation */
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -52,20 +51,21 @@ h2 {
   border-bottom: 2px solid #E4E7ED;
 }
 
-/* Style the links inside the navigation bar */
-.tabs a {
+.tabs button {
   display: inline-block;
-  color: #9d9d9d;
   text-align: center;
   padding: 14px 16px;
   margin: 0 5%;
   text-decoration: none;
   font-size: 1.5rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom: 3px solid transparent;
 }
 
 /* On mobile */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   h1 {
     font-size: 1.7rem;
     font-weight: 900;
@@ -80,7 +80,7 @@ h2 {
     font-weight: 600;
   }
 
-  .confirmed-num, .recovered-num, .deaths-num  {
+  .confirmed-num, .recovered-num, .deaths-num {
     font-size: 1.7rem;
     font-weight: 600;
   }
@@ -89,21 +89,20 @@ h2 {
     margin: auto;
   }
 
-  .tabs a {
+  .tabs button {
     font-size: 1rem;
     margin: 0 0;
   }
 }
 
-.tabs a:hover {
-  color: #1565C0;
+.tabs button:hover {
   border-bottom: 3px solid #1565C0;
 }
 
 .tabs .active {
-  border-bottom: 3px solid #1565C0;
   color: #1565C0;
   font-weight: 900;
+  border-bottom: 3px solid #1565C0;
 }
 
 .data {
