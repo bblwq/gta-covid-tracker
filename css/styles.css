@@ -63,6 +63,7 @@ h2 {
   border-left: none;
   border-right: none;
   border-bottom: 3px solid transparent;
+  outline: none;
 }
 
 /* On mobile */
@@ -104,6 +105,7 @@ h2 {
   color: #1565C0;
   font-weight: 900;
   border-bottom: 3px solid #1565C0;
+  outline: none;
 }
 
 .data {
