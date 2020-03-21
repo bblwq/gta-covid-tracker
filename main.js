@@ -1,5 +1,6 @@
 console.log("main.js loaded");
 $(document).ready(function() {
+	$(".tab").hide();
 	$("#tab-home").show();
 	
 	$("#home-link").click(function() {
