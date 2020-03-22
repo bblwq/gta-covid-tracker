@@ -127,8 +127,8 @@ h2 {
   }
 
   .numbers {
-    margin: 2% 5px;
-    width: 100%;
+    margin: 2% auto;
+    width: 98%;
   }
 
   h2 {
