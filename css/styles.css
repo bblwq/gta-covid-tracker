@@ -122,6 +122,10 @@ h2 {
   .numbers {
     width: 50%;
   }
+  
+  .tabs {
+    width: 60%;
+  }
 }
 
 /* On mobile */
