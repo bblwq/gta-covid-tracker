@@ -121,7 +121,7 @@ h2 {
 }
 
 /* On mobile */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1270px) {
   h1 {
     font-size: 1.7rem;
     font-weight: 900;
