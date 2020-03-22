@@ -12,8 +12,6 @@ h2 {
   text-align: center;
 }
 
-
-
 .headline {
   margin-top: 2%;
   text-align: center;
@@ -28,7 +26,6 @@ h2 {
   border: 1px solid #E4E7ED;
   border-radius: 9px;
 }
-
 
 .data {
   display: inline-block;
@@ -120,8 +117,15 @@ h2 {
   float: left;
 }
 
+/* Between mobile and desktop */
+@media only screen and (min-width: 991px) and (max-width: 1270px) {
+  .numbers {
+    width: 50%;
+  }
+}
+
 /* On mobile */
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 991px) {
   h1 {
     font-size: 1.7rem;
     font-weight: 900;
