@@ -108,10 +108,15 @@ h2 {
 }
 
 .tab {
-  width: 50%;
+  width: 100%;
   float: left;
   margin: 1% 0;
   box-shadow: 0 2px 7px rgba(118, 118, 118, 0.47);
+}
+
+.sub-tab {
+  width: 50%;
+  float: left;
 }
 
 /* On mobile */
