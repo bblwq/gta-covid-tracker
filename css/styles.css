@@ -107,10 +107,6 @@ h3 {
 
 /* Between mobile and desktop */
 @media only screen and (min-width: 991px) and (max-width: 1270px) {
-  .numbers {
-    width: 50%;
-  }
-  
   .tabs {
     width: 70%;
   }
@@ -133,6 +129,11 @@ h3 {
     font-weight: 600;
   }
 
+  h3 {
+  font-size: 0.8rem;
+  font-weight: 200;
+  }
+  
   .confirmed-num, .recovered-num, .deaths-num {
     font-size: 1.7rem;
     font-weight: 600;
