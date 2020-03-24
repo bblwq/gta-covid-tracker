@@ -46,7 +46,7 @@
     <button id="supplies-link" type="button" name="supplies" class="tab-btn">Supplies</button>
   </div>
 
-  <div class="container tab-content">
+  <div class="container-sm tab-content">
 	  <!-- GTA Map -->
     <div id="tab-home" class="tab">
       <!-- <p>Map coming soon...</p> -->
@@ -119,10 +119,16 @@
     <div id="tab-data" class="tab" style="display:none;"></div>
 	  <!-- News feed -->
     <div id="tab-news" class="tab" style="display:none;">
-	  <div id="GovCanHealth" class="sub-tab">
+      <div class="labels">
+        <button id="GCH-btn" type="button" name="GCH" class="label-btn active">@GovCanHealth</button>
+        <button id="Metrolinx-btn" type="button" name="Metrolinx" class="label-btn">@Metrolinx</button>
+        <button id="WestJet-btn" type="button" name="WestJet" class="label-btn">@WestJet</button>
+      </div>
+
+      <div id="GovCanHealth" class="sub-tab">
         <a class="twitter-timeline" href="https://twitter.com/GovCanHealth?ref_src=twsrc%5Etfw">Tweets by GovCanHealth</a>
       </div>
-      <div id="GovCanHealth" class="sub-tab">
+      <div id="Metrolinx" class="sub-tab" style="display: none;">
         <a class="twitter-timeline" href="https://twitter.com/Metrolinx?ref_src=twsrc%5Etfw">Tweets by Metrolinx</a>
       </div>
     </div>
