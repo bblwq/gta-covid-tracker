@@ -24,6 +24,29 @@ $(document).ready(function() {
 		$(".tab").hide();
 		$('#tab-news').show();
 	});
+	
+		// Labels function
+	  $("#GCH-btn").click(function() {
+	    $(".label-btn").removeClass('active');
+	    $(this).addClass("active");
+	    $(".sub-tab").hide();
+	    $("#GovCanHealth").show();
+	  });
+	
+	  $("#Metrolinx-btn").click(function() {
+	    $(".label-btn").removeClass('active');
+	    $(this).addClass("active");
+	    $(".sub-tab").hide();
+	    $("#Metrolinx").show();
+	  });
+
+	  $("#WestJet-btn").click(function() {
+	    $(".label-btn").removeClass('active');
+	    $(this).addClass("active");
+	    $(".sub-tab").hide();
+	    $("#WestJet").show();
+	  });
+	
 	$("#supplies-link").click(function() {
 		$(".tab-btn").removeClass('active');
 		$(this).addClass('active');
