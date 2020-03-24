@@ -115,7 +115,7 @@ h3 {
   background-color: #fff;
   border: none;
   border-radius: 9px;
-  box-shadow: 0 1px 5px rgba(118, 118, 118, 0.47);
+/*   box-shadow: 0 1px 5px rgba(118, 118, 118, 0.47); */
   padding: 8px 10px;
   margin: 2px 1%;
 }
