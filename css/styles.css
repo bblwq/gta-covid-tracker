@@ -18,6 +18,10 @@ h3 {
   font-weight: 200;
 }
 
+button:focus {
+  outline: none;
+}
+
 .headline {
   margin-top: 2%;
   text-align: center;
@@ -76,10 +80,6 @@ h3 {
   border-left: none;
   border-right: none;
   border-bottom: 3px solid transparent;
-}
-
-.tab-btn:focus {
-  outline: none;
 }
 
 .tab-btn:hover {
