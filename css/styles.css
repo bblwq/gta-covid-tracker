@@ -5,6 +5,7 @@ body {
 h1 {
   font-size: 2.2rem;
   font-weight: 700;
+  color: #1565C0;
 }
 
 h2 {
@@ -22,6 +23,7 @@ h3 {
   text-align: center;
 }
 
+/* Numbers section */
 .numbers {
   position: relative;
   width: 60%;
@@ -29,7 +31,7 @@ h3 {
   text-align: left;
   padding: 1% 3%;
   border: 1px solid #E4E7ED;
-  border-radius: 9px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -50,6 +52,7 @@ h3 {
   font-weight: 600;
 }
 
+/* Tabs section */
 .tabs {
   background-color: #fff;
   overflow: hidden;
@@ -60,7 +63,7 @@ h3 {
   border-bottom: 1px solid #E4E7ED;
 }
 
-.tabs button {
+.tab-btn {
   display: inline-block;
   color: #9d9d9d;
   background-color: #fff;
@@ -75,34 +78,56 @@ h3 {
   border-bottom: 3px solid transparent;
 }
 
-.tabs button:focus {
+.tab-btn:focus {
   outline: none;
 }
 
-.tabs button:hover {
+.tab-btn:hover {
   border-bottom: 3px solid #1565C0;
 }
 
-.tabs .active {
+.tab-btn.active {
   color: #1565C0;
   font-weight: 900;
   border-bottom: 3px solid #1565C0;
 }
 
-.tabs .active:focus {
-  outline: none;
+/* Tab content section */
+.tab-content {
+  width: 60%;
+  padding: 0;
+  margin-top: 0;
 }
 
 .tab {
   width: 100%;
-  float: left;
-  margin: 1% 0;
-  box-shadow: 0 2px 7px rgba(118, 118, 118, 0.47);
+  margin: 1% auto;
+}
+
+.labels {
+  text-align: left;
+  padding: 1% 2%;
+  border-bottom: 1px solid #E4E7ED;
+}
+
+.label-btn {
+  color: #1565C0;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 1px 5px rgba(118, 118, 118, 0.47);
+  padding: 8px 10px;
+  margin: 2px 1%;
+}
+
+.label-btn.active {
+  color: #fff;
+  background: #1565C0;
 }
 
 .sub-tab {
-  width: 50%;
-  float: left;
+  width: 60%;
+  margin: 1% auto;
+  box-shadow: 0 1px 7px rgba(118, 118, 118, 0.47);
 }
 
 .tableauPlaceholder {
@@ -111,7 +136,7 @@ h3 {
 
 /* Between mobile and desktop */
 @media only screen and (min-width: 991px) and (max-width: 1270px) {
-  .tabs {
+  .numbers, .tabs, .tab-content {
     width: 70%;
   }
 }
@@ -123,37 +148,43 @@ h3 {
     font-weight: 900;
   }
 
-  .numbers {
-    margin: 2% auto;
-    width: 98%;
-  }
-
   h2 {
     font-size: 1rem;
     font-weight: 600;
   }
 
   h3 {
-  font-size: 0.8rem;
-  font-weight: 200;
+    font-size: 0.8rem;
+    font-weight: 200;
   }
-  
-  .confirmed-num, .recovered-num, .deaths-num {
+
+  .numbers {
+    margin: 2% auto;
+    width: 98%;
+  }
+
+  .confirmed-num, .deaths-num {
     font-size: 1.7rem;
     font-weight: 600;
   }
 
-  .tabs {
+  .tabs, .tab-content, .tab, .sub-tab {
     margin: auto;
     width: 100%;
   }
 
-  .tabs button {
+  .tab-btn {
     font-size: 1rem;
     margin: 0 0;
   }
 
-  .tab {
-    width: 100%;
+  .labels {
+    flex: none;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .label-btn {
+    font-size: 0.8rem;
   }
 }
