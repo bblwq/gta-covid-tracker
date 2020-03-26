@@ -146,6 +146,17 @@ button:focus {
   margin: 5% 0;
 }
 
+.card-body {
+  min-height: 156px;
+}
+
+.card-icon {
+  height: 48px;
+  width: 48px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
 .fa-user-md {
   color: #FFA000;
   margin-bottom: 2%;
@@ -153,7 +164,6 @@ button:focus {
 
 /* Between mobile and desktop */
 @media only screen and (min-width: 1438px) {
-
   .card {
     margin: 5% auto;
   }
@@ -173,13 +183,6 @@ button:focus {
   .tab-btn {
     margin: 0 1%;
   }
-}
-
-.card-icon {
-  height: 48px;
-  width: 48px;
-  margin-right: 2%;
-  margin-bottom: 2%;
 }
 
 /* On mobile */
