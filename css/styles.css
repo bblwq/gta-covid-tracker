@@ -18,6 +18,12 @@ h3 {
   font-weight: 200;
 }
 
+h5 {
+  display: inline;
+  ;
+  color: #1565C0;
+}
+
 button:focus {
   outline: none;
 }
@@ -134,7 +140,24 @@ button:focus {
   margin: auto;
 }
 
+/* Help section */
+.card {
+  max-width: 415px;
+  margin: 5% 0;
+}
+
+.fa-user-md {
+  color: #FFA000;
+  margin-bottom: 2%;
+}
+
 /* Between mobile and desktop */
+@media only screen and (min-width: 1438px) {
+
+  .card {
+    margin: 5% auto;
+  }
+}
 
 @media only screen and (min-width: 1270px) and (max-width: 1774px) {
   .tab-btn {
@@ -142,15 +165,21 @@ button:focus {
   }
 }
 
-
 @media only screen and (min-width: 991px) and (max-width: 1270px) {
   .numbers, .tabs, .tab-content {
     width: 70%;
   }
 
   .tab-btn {
-    margin: 0 2%;
+    margin: 0 1%;
   }
+}
+
+.card-icon {
+  height: 48px;
+  width: 48px;
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
 
 /* On mobile */
@@ -196,7 +225,16 @@ button:focus {
     white-space: nowrap;
   }
 
+  .labels::-webkit-scrollbar, .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
   .label-btn {
     font-size: 0.8rem;
+  }
+
+  .card {
+    width: 95%;
+    margin: 5% 2%;
   }
 }
