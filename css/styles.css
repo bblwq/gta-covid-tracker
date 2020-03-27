@@ -267,4 +267,8 @@ button:focus {
     width: 95%;
     margin: 5% 2%;
   }
-}
+  
+  .notes {
+  width: 100%;
+  }
+
