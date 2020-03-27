@@ -1,4 +1,3 @@
-console.log("main.js loaded");
 $(document).ready(function() {
   // Load map
   $("#home-link").click(function() {
