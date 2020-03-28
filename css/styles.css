@@ -63,9 +63,8 @@ button:focus {
   font-weight: 600;
 }
 
-.statcounter {
-  font-size: 1.5rem;
-  color: #1565C0;
+.update-time {
+  margin-left: 5%;
 }
 
 /* Tabs section */
