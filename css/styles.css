@@ -269,6 +269,8 @@ button:focus {
 
   .label-btn {
     font-size: 0.8rem;
+    border: none;
+    box-shadow: 0 1px 5px rgba(118, 118, 118, 0.47);
   }
 
   .card {
