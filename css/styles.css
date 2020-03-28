@@ -48,7 +48,7 @@ button:focus {
 .data {
   display: inline-block;
   position: relative;
-  margin: 0 5%;
+  margin-left: 5%;
 }
 
 .confirmed-num {
@@ -270,8 +270,7 @@ button:focus {
     width: 95%;
     margin: 5% 2%;
   }
-  
+
   .notes {
   width: 95%;
   }
-
