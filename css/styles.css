@@ -27,7 +27,6 @@ button:focus {
   outline: none;
 }
 
-
 .headline {
   margin-top: 2%;
   text-align: center;
@@ -45,7 +44,7 @@ button:focus {
   overflow: hidden;
 }
 
-.data {
+.confirmed, .deaths, .update-time {
   display: inline-block;
   position: relative;
   margin-left: 5%;
@@ -62,11 +61,7 @@ button:focus {
   font-weight: 600;
 }
 
-.update-time {
-  margin-left: 5%;
-}
-
-.visit-counter {
+.data, .visit-counter {
   text-align: center;
 }
 
@@ -201,11 +196,11 @@ button:focus {
   .card {
     margin: 5% auto;
   }
-  
-  .data {
-  margin-left: 5%;
-  margin-right: 5%;
-}
+
+  .confirmed, .death {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media only screen and (min-width: 1270px) and (max-width: 1774px) {
@@ -283,5 +278,11 @@ button:focus {
   }
 
   .notes {
-  width: 95%;
+    width: 95%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .confirmed, .update-time {
+      margin-left: 0;
+    }
   }
