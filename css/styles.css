@@ -66,8 +66,8 @@ button:focus {
   margin-left: 5%;
 }
 
-.data .card-icon {
-  margin: 1% auto;
+.visit-counter {
+  text-align: center;
 }
 
 /* Tabs section */
