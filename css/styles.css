@@ -66,6 +66,10 @@ button:focus {
   margin-left: 5%;
 }
 
+.data .card-icon {
+  margin: auto;
+}
+
 /* Tabs section */
 .tabs {
   background-color: #fff;
