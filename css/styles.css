@@ -197,6 +197,11 @@ button:focus {
   .card {
     margin: 5% auto;
   }
+  
+  .data {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 }
 
 @media only screen and (min-width: 1270px) and (max-width: 1774px) {
