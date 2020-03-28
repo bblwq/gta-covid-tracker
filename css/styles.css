@@ -53,13 +53,13 @@ button:focus {
 }
 
 .confirmed-num {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #FFA000;
 }
 
 .deaths-num {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
