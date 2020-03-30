@@ -285,4 +285,8 @@ button:focus {
     .confirmed, .update-time {
       margin-left: 0;
     }
+    
+    .linkedin-btn {
+      margin-bottom: 10px;
+    }
   }
