@@ -19,14 +19,14 @@ $(document).ready(function() {
       var vizElement = divElement.getElementsByTagName('object')[0];
       if ( divElement.offsetWidth > 800 ) {
         vizElement.style.width='700px';
-        vizElement.style.height='1527px';
+        vizElement.style.height='1690px';
       } else if (
         divElement.offsetWidth > 500 ) {
         vizElement.style.width='700px';
-        vizElement.style.height='1527px';
+        vizElement.style.height='1690px';
       } else {
         vizElement.style.width='100%';
-        vizElement.style.height='1527px';
+        vizElement.style.height='1690px';
       }
       var scriptElement = document.createElement('script');
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
