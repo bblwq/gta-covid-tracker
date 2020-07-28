@@ -1,5 +1,6 @@
 from flask import Flask, render_template
-from datetime import datetime, timedelta
+import time
+import os
 import pandas as pd
 
 
@@ -13,8 +14,8 @@ def hello_world():
     confirm = int(data.loc[data.index[-1], "Sum.of.Cases"])
     deceased = int(data.loc[data.index[-1], "Sum.of.Death"])
     more = int(data.loc[data.index[-1], "Change"])
-    time = datetime.now() - timedelta(hours=5)
-    time = time.strftime('%H:%M %B %d %Y')
+    mdtime = time.localtime(os.path.getmtime(app.config['CSVFILE']))
+    mdtime = time.strftime('%H:%M %B %d %Y', mdtime)
     return render_template('index.html', confirm_case=confirm,
                            deceased_case=deceased, more_case=more,
-                           update_time=time)
+                           update_time=mdtime)
