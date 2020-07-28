@@ -4,14 +4,12 @@ import pandas as pd
 
 
 app = Flask(__name__, static_url_path='/')
-
-
-# data = pd.read_csv('/Users/larryleang/Google Drive/centos/R/historical_data.csv')
+app.config.from_envvar('SETTING', silent=False)
 
 
 @app.route('/')
 def hello_world():
-    data = pd.read_csv('/home/larryrstudio/covid19/historical_data.csv')
+    data = pd.read_csv(app.config['CSVFILE'])
     confirm = int(data.loc[data.index[-1], "Sum.of.Cases"])
     deceased = int(data.loc[data.index[-1], "Sum.of.Death"])
     more = int(data.loc[data.index[-1], "Change"])
