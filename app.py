@@ -1,6 +1,7 @@
 from flask import Flask, render_template
-import time
+from datetime import datetime
 import os
+import pytz
 import pandas as pd
 
 
@@ -14,8 +15,9 @@ def hello_world():
     confirm = int(data.loc[data.index[-1], "Sum.of.Cases"])
     deceased = int(data.loc[data.index[-1], "Sum.of.Death"])
     more = int(data.loc[data.index[-1], "Change"])
-    mdtime = time.localtime(os.path.getmtime(app.config['CSVFILE']))
-    mdtime = time.strftime('%H:%M %B %d %Y', mdtime)
+    tz = pytz.timezone('America/New_York')
+    modify_time = os.path.getmtime(app.config['CSVFILE'])
+    modify_time = datetime.fromtimestamp(modify_time, tz=tz).strftime('%H:%M %B %d %Y')
     return render_template('index.html', confirm_case=confirm,
                            deceased_case=deceased, more_case=more,
-                           update_time=mdtime)
+                           update_time=modify_time)
