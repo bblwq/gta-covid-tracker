@@ -10,7 +10,7 @@ app.config.from_envvar('SETTING', silent=False)
 
 
 @app.route('/')
-def hello_world():
+def index():
     data = pd.read_csv(app.config['CSVFILE'])
     confirm = int(data.loc[data.index[-1], "Sum.of.Cases"])
     deceased = int(data.loc[data.index[-1], "Sum.of.Death"])
