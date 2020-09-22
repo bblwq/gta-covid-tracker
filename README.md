@@ -12,6 +12,10 @@ export SETTING=/path/to/config/file
 
 ## Update History
 
+#### v2.1
+
+- Implement RESTful
+
 #### v2.0
 
 - Rebuild the site with Flask
