@@ -1,4 +1,20 @@
 $(document).ready(function() {
+  $.ajax({
+    url: 'localhost:5000',
+    type: 'GET',
+    datatype: 'JSON',
+    success:function(data) {
+      alert('done');
+      $('#confirm_case').text(data.confirm_case);
+      $('#more_case').text(data.deceased_case);
+      $('#deceased_case').text(data.more_case);
+      $('#update_time').text(data.modify_time_case);
+    },
+    error:function () {
+     alert('error');
+    },
+  });
+
   // Load map
   $("#home-link").click(function() {
     $(".tab-btn").removeClass('active');
