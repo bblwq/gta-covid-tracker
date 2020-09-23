@@ -1,4 +1,19 @@
 $(document).ready(function() {
+  $.ajax({
+    url: '/api',
+    type: 'GET',
+    datatype: 'JSON',
+    success:function(data) {
+      $('#confirm_cases').text(data.confirm_cases);
+      $('#daily_different').text(data.daily_different);
+      $('#deceased_cases').text(data.deceased_cases);
+      $('#update_time').text(data.latest_update);
+    },
+    error:function () {
+     alert('There is an error when connecting to the data server.');
+    },
+  });
+
   // Load map
   $("#home-link").click(function() {
     $(".tab-btn").removeClass('active');
