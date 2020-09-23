@@ -4,14 +4,13 @@ $(document).ready(function() {
     type: 'GET',
     datatype: 'JSON',
     success:function(data) {
-      alert('done');
       $('#confirm_case').text(data.confirm_case);
-      $('#more_case').text(data.deceased_case);
-      $('#deceased_case').text(data.more_case);
+      $('#more_case').text(data.more_case);
+      $('#deceased_case').text(data.deceased_case);
       $('#update_time').text(data.modify_time_case);
     },
     error:function () {
-     alert('error');
+     alert('There is an error when connecting to the data server.');
     },
   });
 

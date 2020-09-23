@@ -1,4 +1,4 @@
-# GTA COVID-19 Tracker
+# [GTA COVID-19 Tracker](https://gtacovid19.ca)
 
 ## Vistor Count
 
