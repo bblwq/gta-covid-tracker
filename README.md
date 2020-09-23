@@ -38,7 +38,7 @@ CSVFILE = "/path/to/csv/file.csv"
 
 #### v1.0
 
-- Initial release! Check timly covid-19 situation in the great toronto area.
+- Initial release! Check timly covid-19 situation in the great toronto area
 - Use Tableau for data visulization
 
 ## Vistor Count
