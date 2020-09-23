@@ -18,9 +18,10 @@ class Index(Resource):
         deceased = int(data.loc[data.index[-1], "Sum.of.Death"])
         more = int(data.loc[data.index[-1], "Change"])
         tz = pytz.timezone('America/New_York')
-        modify_time = os.path.getmtime(app.config['CSVFILE'])
-        modify_time = datetime.fromtimestamp(modify_time, tz=tz).strftime('%H:%M %B %d %Y')
-        return {'confirm_case': confirm, 'deceased_case': deceased, 'more_case': more, 'modify_time_case': modify_time}
+        update_time = os.path.getmtime(app.config['CSVFILE'])
+        update_time = datetime.fromtimestamp(update_time, tz=tz).strftime('%H:%M %B %d %Y')
+        return {'confirm_cases': confirm, 'deceased_cases': deceased,
+                'daily_different': more, 'latest_update': update_time}
 
 
 api.add_resource(Index, '/')
